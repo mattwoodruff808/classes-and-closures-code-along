@@ -70,7 +70,24 @@ let greet = greetingClosure('Hello')
 */
 
 // Code here
+function calculatorCreator(){
+  let result = 0;
 
+  return {
+    add: function(num){
+      return result += num;
+    },
+    subtract: function(num){
+      return result -= num;
+    },
+    multiply: function(num){
+      return result *= num;
+    },
+    divide: function(num){
+      return result /= num;
+    }
+  };
+};
 
 
 ////////// PROBLEM 4 //////////
